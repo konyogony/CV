@@ -1,0 +1,137 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\PassOptionsToPackage{lowtilde}{url}
+
+\documentclass[10pt,a4paper,ragged2e, normalphoto]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{CVHeading}{HTML}{155570}
+\definecolor{CVAccent}{HTML}{247B98}
+\definecolor{CVEmphasis}{HTML}{35434B}
+\definecolor{CVBody}{HTML}{59636A}
+
+\colorlet{heading}{CVHeading}
+\colorlet{accent}{CVAccent}
+\colorlet{emphasis}{CVEmphasis}
+\colorlet{body}{CVBody}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Ilya Raspuutin}
+\tagline{Rust Developer \& Physics Enthusiast}
+\photo{2.8cm}{logo}
+\personalinfo{%
+	% You can add your own with \printinfo{symbol}{detail}
+	\email{ilya2718@headstartphuket.com}
+	\email{me@konyogony.dev}
+	\phone{+66 064 321 53-56}
+	\location{Phuket, Thailand}
+	%\homepage{\url{https://konyogony.dev}}
+	%\homepage{\url{https://github.com/konyogony}}
+}
+
+\begin{fullwidth}
+	\makecvheader
+\end{fullwidth}
+
+\cvsection[page1sidebar]{Education}
+
+\cvevent{HeadStart International School Phuket}{Graduation: June 2027}{January 2023 -- June 2027}{Phuket, Thailand}{}{}
+
+\medskip
+
+\textbf{Cambridge International A Levels}\\
+\textit{Predicted grades; May/June 2027}
+\begin{itemize}
+	\item Physics A*; Chemistry A*; Computer Science A*;
+	      Mathematics A*; Further Mathematics A*
+\end{itemize}
+
+\divider
+
+\textbf{Cambridge International AS Levels}\\
+\textit{Achieved grades; May/June 2026}
+\begin{itemize}
+	\item Physics A; Chemistry A; Computer Science A;
+	      Mathematics A
+\end{itemize}
+
+\smallskip
+
+\textit{Predicted grades; October/November 2026}
+\begin{itemize}
+	\item Further Mathematics A
+\end{itemize}
+
+\divider
+
+\textbf{Edexcel Extended Project Qualification}\\
+\textit{Achieved grade: A*; May/June 2026}
+\begin{itemize}
+	\item How to create an efficient real-time Ocean Simulation in Rust?
+\end{itemize}
+
+\divider
+
+\textbf{Cambridge International IGCSEs}\\
+\textit{Achieved grades; May/June 2025}
+\begin{itemize}
+	\item Mathematics A*; Co-ordinated Sciences A*A*;
+	      Computer Science A*; Business A*; ICT A*;
+	      First Language English A; Economics A
+\end{itemize}
+
+\cvsection{Standardised Tests}
+
+\cvevent{SAT}
+{Total: 1450/1600}
+{August 2026}{}{}{}
+\begin{itemize}
+	\item Mathematics: 790; Reading and Writing: 660
+\end{itemize}
+
+\divider
+
+\cvevent{IELTS Academic}
+{Overall: 8.5}
+{October 2026}{}{}{}
+\begin{itemize}
+	\item Listening: 9.0; Reading: 9.0;
+	      Speaking: 9.0; Writing: 7.0
+\end{itemize}
+
+\cvsection{Activities \& Projects}
+
+\cvevent{Ocean Simulation}{Extended Project Qualification: Technical Paper}{August 2025 -- April 2026}{}{\url{https://ocean.konyogony.dev}}{}
+Researched and developed a fully functional ocean simulation in Rust, following the Tessendorfs model. Wrote a technical paper about the implementation, created a homepage, added as an exemplar project on the WGPU website.
+Learnt how compute shaders work, in addition to intriguing math such as Inverse Fast Fourier Transforms for converting ocean spectrum from frequency to spatial domain and Matrix Operations for camera rotation.
+
+\addnextpagesidebar[-1ex]{page2sidebar}
+
+\divider
+
+\cvevent{Wayclip}{Lead Engineer \& Founder}{2025 -- Current}{}{\url{https://github.com/wayclip}}{\url{https://wayclip.konyogony.dev}}
+An open-source innitiative aimed to provide a ready ecosystem for recording, capturing and uploading gameplay clips on Wayland, Linux. I have assembled a small team, where we created a fully custom daemon, website and user interfaces to provide ease of creating clips on Wayland.
+We use modern technologies and libraries such as PipeWire, GStreamer and work directly with NVIDIA video pipelines.
+
+\divider
+
+\cvevent{Senior Prefect of House}{School Leadership Position}{August 2025 -- June 2027}{HeadStart International School Phuket}{}{}
+I lead and coordinate a team of prefects, where we help to organise school events such as University and Halloween Fair, in addition to contributing to shaping HeadStarts future. Our team also manages weekly house quizes, encouraging collaboration between students.
+
+\divider
+
+\cvevent{2x Half-Marathon Running}{Independant Athlete}{2025 -- 2026}{Chang Rai \& Krabi}{}{}
+I have achieved a personal accomplishment of running two half-marathons (21.1km) which required weeks of consistent training and endurance. Running allows me to channel my inner thoughts and provides a channel to keep myself fit.
+
+\end{document}
